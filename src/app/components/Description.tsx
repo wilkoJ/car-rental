@@ -33,7 +33,7 @@ const Description = () => {
             </div>
           </div>{" "}
           <div
-            style={{ aspectRatio: 70 / 45 }}
+            style={{ aspectRatio: 70 / 42 }}
             className="hidden md:block absolute w-2/4 right-0 z-0"
           >
             <Image fill className="image" src="/fleet_car.png" alt="fleet" />

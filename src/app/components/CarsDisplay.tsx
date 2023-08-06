@@ -43,7 +43,7 @@ const CarsDisplay = () => {
             <Image
               width={400}
               height={350}
-              className="w-full h-auto mt-6"
+              className="w-full h-auto mt-4"
               src={selectedCar.img}
               alt={selectedCar.name}
             />
