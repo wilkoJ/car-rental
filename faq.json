@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Does the vehicle come with charging cables?",
+    "content": "Yes, some vehicles may have charging cables or adapters included if needed."
+  },
+  {
+    "title": "Does AutoGreen provide a charging solution?",
+    "content": "Yes, AutoGreen will provide you with instructions on how to charge when you pick up your electric vehicle. If you are driving a Tesla you can download the Tesla app and find nearby charging stations during your trip.  "
+  },
+  {
+    "title": "How much does it cost to charge an EV?",
+    "content": "The charging cost and how it’s calculated varies throughout the US. In some cases, you pay per kilowatt-hour (kWh) used while in others you pay per minute of charging.  "
+  },
+  {
+    "title": "What distinguishes the driving behavior of an electric car?",
+    "content": "The braking behavior of the electric vehicle is also different. In addition to the conventional braking system, electric vehicles utilize Regenerative Braking.  Here, when the accelerator pedal is released, the electric motor is used as a generator and kinetic energy is converted into electrical energy. In this process, the car slows down.  In some cases, Regenerative Braking is so powerful that the conventional brakes rarely need to be used."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Tesla Model 3",
+    "mark": "Tesla",
+    "description": "Comfortable, dynamic, quiet",
+    "price": 115.24,
+    "batterie": "491km",
+    "seats": 5,
+    "bags": 4,
+    "img": "/cars/tesla-model3-4d-silver-2021.png"
+  },
+  {
+    "name": "VW ID.3",
+    "mark": "Volkswagen",
+    "description": "Comfortable, dynamic, quiet",
+    "price": 87.88,
+    "batterie": "385km",
+    "seats": 5,
+    "bags": 4,
+    "img": "/cars/vw-id3-4d-white-2022.png"
+  },
+  {
+    "name": "Luxury (Volovo XC40)",
+    "mark": "Volvo",
+    "description": "Spacious, Confortable",
+    "price": 82.08,
+    "batterie": "358km",
+    "seats": 5,
+    "bags": 4,
+    "img": "/cars/volvo-xc40-5d-silber-2020.png"
+  },
+  {
+    "name": "Smart Fortwo electric",
+    "mark": "Smart",
+    "description": "Small, Quiet",
+    "price": 50.91,
+    "batterie": "133km",
+    "seats": 2,
+    "bags": 2,
+    "img": "/cars/smart-eq-2d-beige-2022.png"
+  },
+  {
+    "name": "Fiat 500 electric",
+    "mark": "Fiat",
+    "description": "Small, Quiet",
+    "price": 55.83,
+    "batterie": "308km",
+    "seats": 4,
+    "bags": 2,
+    "img": "/cars/fiat-500-2d-blue-2020.png"
+  },
+  {
+    "name": "Mercedes-Benz EQS (Electric)",
+    "mark": "Mercedes-Benz",
+    "description": "Small, Quiet",
+    "price": 372.58,
+    "batterie": "362km",
+    "seats": 5,
+    "bags": 4,
+    "img": "/cars/mb-eqs-5d-silver-2022.png"
+  }
+]

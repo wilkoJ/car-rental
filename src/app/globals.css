@@ -1,0 +1,69 @@
+@tailwind base;
+
+:root {
+  --primary: #4ade80;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary);
+  scroll-behavior: smooth;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 14px;
+  border: 3px solid var(--primary);
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .primaryButton {
+    @apply text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br  shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-sm text-sm px-5 py-3 text-center;
+  }
+  .secondaryButton {
+    @apply text-black hover:bg-gradient-to-r from-green-400 via-green-500 to-green-600  shadow-lg border-2 font-medium rounded-sm text-sm px-5 py-3 text-center;
+  }
+  .specTab {
+    @apply grid grid-cols-2 items-center py-2 border-t-0 border border-black;
+  }
+  .cellKey {
+    @apply border-r-2  border-r-black;
+  }
+  .cell {
+    @apply px-5 text-center;
+  }
+  .primaryColor {
+    @apply text-green-500;
+  }
+  .formField {
+    @apply flex flex-col gap-3;
+  }
+  .container {
+    @apply m-auto max-w-screen-2xl py-0 px-5;
+  }
+  h1 {
+    @apply text-center text-5xl md:text-7xl font-medium my-3;
+  }
+  h2 {
+    @apply text-center text-3xl md:text-5xl font-normal;
+  }
+  h3 {
+    @apply text-center text-xl md:text-3xl font-normal;
+  }
+  p {
+    @apply text-center;
+  }
+  #footer li a {
+    @apply hover:primaryColor;
+  }
+  #footer li {
+    @apply pb-2;
+  }
+}
