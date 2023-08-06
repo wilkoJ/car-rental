@@ -24,8 +24,8 @@ const Infos = () => {
             <div className="flex flex-col">
               <h3>{`Let's Ride`}</h3>
               <p>
-                Whether you're hitting the open road, we've got you covered with
-                our wide range of cars
+                {`Whether you're hitting the open road, we've got you covered with
+                our wide range of cars`}
               </p>
             </div>
           </div>
