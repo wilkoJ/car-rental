@@ -6,10 +6,16 @@ const CarsDisplay = () => {
   const [cars, setCars] = useState<ICars[]>([]);
   const [selectedCar, setSelectedCar] = useState<ICars>(defaultCar);
 
+  console.log("rerendered");
   const fetchData = async () => {
-    const data = await fetch("/cars");
-    const res = await data.json();
-    setCars(res.data);
+    try {
+      const data = await fetch("/cars");
+      const res = await data.json();
+      setCars(res.data);
+    } catch (e) {
+      console.log(e);
+      //add fallback logic
+    }
   };
 
   useEffect(() => {
@@ -39,18 +45,18 @@ const CarsDisplay = () => {
               );
             })}
           </div>
-          <div className="relative w-3/4">
+          <div className="relative w-3/4 transition-opacity opacity-1">
             <Image
               width={400}
               height={350}
-              className="w-full h-auto mt-4"
+              className="w-full h-auto mt-4 "
               src={selectedCar.img}
               alt={selectedCar.name}
             />
           </div>
 
           <div className="flex flex-col md:w-96">
-            <div className="w-full bg-green-500 text-white text-center py-4">
+            <div className="w-full primaryBg text-white text-center py-4 ">
               <p>
                 <b>{selectedCar.price}$</b> / rent per day
               </p>

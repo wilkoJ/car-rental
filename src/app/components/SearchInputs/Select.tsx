@@ -1,17 +1,28 @@
 import React from "react";
-
-const Select = () => {
+type IProps = {
+  id: string;
+  title: string;
+  fields: string[];
+  register: any;
+};
+const Select = ({ id, title, fields, register }: IProps) => {
   return (
     <div>
       <select
-        id="countries"
+        {...register(id)}
+        id={id}
         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       >
-        <option defaultValue={"US"}>Choose a country</option>
-        <option value="US">United States</option>
-        <option value="CA">Canada</option>
-        <option value="FR">France</option>
-        <option value="DE">Germany</option>
+        <option disabled selected defaultValue={title}>
+          {title}
+        </option>
+        {fields.map((value, index) => {
+          return (
+            <option key={index} value={value}>
+              {value}
+            </option>
+          );
+        })}
       </select>
     </div>
   );

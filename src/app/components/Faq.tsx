@@ -13,9 +13,7 @@ export const Question = ({ isActive = false, faq, index, onClick }: IProps) => {
     <div className="w-full">
       <div
         className={`${
-          isActive
-            ? "bg-green-500 text-white shadow-sm shadow-green-500   "
-            : ""
+          isActive ? "primaryBg text-white shadow-sm shadow-green-500   " : ""
         } flex cursor-pointer items-center justify-between px-5 py-2 shadow`}
         onClick={() => {
           if (!isActive) onClick(index);
@@ -49,8 +47,8 @@ export const Question = ({ isActive = false, faq, index, onClick }: IProps) => {
       <div
         className={
           isActive
-            ? "max-h-80 p-4 transition-all"
-            : "max-h-0 overflow-hidden transition-all"
+            ? "max-h-80 p-4 transition-all duration-200"
+            : "max-h-0 overflow-hidden transition-all duration-200"
         }
       >
         <p className="text-left">{faq.content}</p>
@@ -65,10 +63,14 @@ const Faq = () => {
   const arrayToFill = Array(4).fill(0);
 
   const fetchData = async () => {
-    const data = await fetch("/faq");
-    const res = await data.json();
-    console.log(res.data);
-    setFaq(res.data);
+    try {
+      const data = await fetch("/faq");
+      const res = await data.json();
+      setFaq(res.data);
+    } catch (e) {
+      console.log(e);
+      //add fallback logic
+    }
   };
 
   useEffect(() => {

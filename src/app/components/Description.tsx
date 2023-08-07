@@ -29,7 +29,9 @@ const Description = () => {
               <button type="button" className="primaryButton">
                 Book Ride
               </button>
-              <button>Learn More</button>
+              <button className="text-white bg-black border shadow-lg font-medium rounded-sm text-sm px-5 py-3 text-center hover:bg-white hover:text-black hover:border-black">
+                Learn More
+              </button>
             </div>
           </div>{" "}
           <div
